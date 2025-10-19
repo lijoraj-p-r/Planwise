@@ -25,14 +25,6 @@
 
 ---
 
-## 📸 Screenshots
-
-> *(Optional: Insert screenshots here)*
-> Example:
-> ![App Screenshot](./screenshots/planwise-home.png)
-
----
-
 ## 📂 Folder Structure
 
 ```
@@ -92,4 +84,5 @@
 **Lijoraj P R**
 📧 [lijorajpr321@gmail.com](mailto:lijorajpr321@gmail.com) 
 🔗 [GitHub Profile](https://github.com/lijoraj-p-r)
+
 
