@@ -34,15 +34,21 @@
 ## 📂 Folder Structure
 
 ```
-Planwise/
-├── public/
-├── src/
-│   ├── components/
-│   ├── App.js
-│   ├── index.js
-│   └── styles/
-├── package.json
-└── README.md
+📦src
+ ┣ 📂assets
+ ┃ ┣ 📂favicon_io
+ ┃ ┃ ┣ 📜favicon.ico
+ ┃ ┃ ┗ 📜site.webmanifest
+ ┃ ┣ 📜Planwise.png
+ ┃ ┗ 📜react.svg
+ ┣ 📂components
+ ┃ ┣ 📜Progresstracker.jsx
+ ┃ ┣ 📜Taskform.jsx
+ ┃ ┗ 📜Tasklist.jsx
+ ┣ 📜App.css
+ ┣ 📜App.jsx
+ ┣ 📜index.css
+ ┗ 📜main.jsx
 ```
 
 ---
@@ -103,3 +109,4 @@ Feel free to check the [issues page](https://github.com/lijorajpr/planwise/issue
 ## ⭐ Show your support
 
 If you like this project, give it a ⭐️ on GitHub — it helps others discover it!
+
