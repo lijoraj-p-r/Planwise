@@ -132,7 +132,7 @@ header p {
 
 .progress {
   height: 100%;
-  width: 60%; /* Example: 60% progress */
+  width: 60%; 
   background-color: #4caf50;
   transition: width 0.3s ease;
 }
@@ -148,9 +148,8 @@ header p {
 }
  #error {
  display: inline-block;
-  color: black;                  /* Text color */
-  border-radius: 999px;          /* Fully rounded corners */
-  font-size: 14px;
+  color: black;              
+  border-radius: 999px;        
   line-height: 1;
   font-weight: 500;
 } 

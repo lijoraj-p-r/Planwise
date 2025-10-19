@@ -10,14 +10,14 @@ export default function Taskform({ addTask }) {
     e.preventDefault();
 
     if (task.trim() === '') {
-      setError('Please enter a task');
+      setError('Please enter a task !');
       return;
     }
 
-    // Submit task
+    
     addTask({ text: task, priority, category, completed: false });
 
-    // Reset
+    
     setTask('');
     setPriority("medium");
     setCategory("General");
@@ -33,13 +33,13 @@ export default function Taskform({ addTask }) {
           value={task}
           onChange={(e) => {
             setTask(e.target.value);
-            if (error) setError(''); // Clear error on change
+            if (error) setError(''); 
           }}
         />
         <button type="submit">Add task</button>
       </div>
 
-      {/* Show inline error */}
+      
       {error && (
         <div id="error">
           {error}
