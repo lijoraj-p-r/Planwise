@@ -3,6 +3,8 @@
 
 **Planwise** is a sleek and intuitive task management application built with **React.js**, designed to help users efficiently organize and track their daily to-dos. Whether you're planning your day, week, or month — Planwise keeps you focused and productive.
 
+Live demo - `https://lijoraj-p-r.github.io/Planwise---Smart-To-Do-Daily-Planner/`
+
 ---
 
 ## 🚀 Features
@@ -109,4 +111,5 @@ Feel free to check the [issues page](https://github.com/lijorajpr/planwise/issue
 ## ⭐ Show your support
 
 If you like this project, give it a ⭐️ on GitHub — it helps others discover it!
+
 
