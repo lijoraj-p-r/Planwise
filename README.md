@@ -3,7 +3,7 @@
 
 **Planwise** is a sleek and intuitive task management application built with **React.js**, designed to help users efficiently organize and track their daily to-dos. Whether you're planning your day, week, or month — Planwise keeps you focused and productive.
 
-Live demo - `https://lijoraj-p-r.github.io/Planwise---Smart-To-Do-Daily-Planner/`
+🔗 [Live Demo](https://lijoraj-p-r.github.io/Planwise---Smart-To-Do-Daily-Planner/)
 
 ---
 
@@ -67,7 +67,7 @@ Live demo - `https://lijoraj-p-r.github.io/Planwise---Smart-To-Do-Daily-Planner/
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/lijorajpr/planwise.git
+   git clone https://github.com/lijoraj-p-r/planwise.git
    cd planwise
    ```
 
@@ -90,26 +90,5 @@ Live demo - `https://lijoraj-p-r.github.io/Planwise---Smart-To-Do-Daily-Planner/
 ## 🧑‍💻 Author
 
 **Lijoraj P R**
-📧 [lijorajpr@example.com](mailto:lijorajpr@example.com) *(replace with actual email if needed)*
-🔗 [GitHub Profile](https://github.com/lijorajpr)
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
-
----
-
-## 🙌 Contributions
-
-Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](https://github.com/lijorajpr/planwise/issues).
-
----
-
-## ⭐ Show your support
-
-If you like this project, give it a ⭐️ on GitHub — it helps others discover it!
-
-
+📧 [lijorajpr@example.com](mailto:lijorajpr321@gmail.com) *(replace with actual email if needed)*
+🔗 [GitHub Profile](https://github.com/lijoraj-p-r)
