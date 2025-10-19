@@ -90,5 +90,6 @@
 ## 🧑‍💻 Author
 
 **Lijoraj P R**
-📧 [lijorajpr@example.com](mailto:lijorajpr321@gmail.com) *(replace with actual email if needed)*
+📧 [lijorajpr321@gmail.com](mailto:lijorajpr321@gmail.com) 
 🔗 [GitHub Profile](https://github.com/lijoraj-p-r)
+
