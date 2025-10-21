@@ -8,7 +8,7 @@
 * 💾 Used localStorage to ensure user data remains intact across browser sessions.
 * 🎨 Designed with a clean and minimal interface using HTML and CSS.
   
-🔗 [Live Demo](https://lijoraj-p-r.github.io/Planwise---Smart-To-Do-Daily-Planner/)
+🔗 [Live Demo](https://lijoraj-p-r.github.io/Planwise/)
 
 ---
 
@@ -88,6 +88,7 @@
 **Lijoraj P R**
 📧 [lijorajpr321@gmail.com](mailto:lijorajpr321@gmail.com) 
 🔗 [GitHub Profile](https://github.com/lijoraj-p-r)
+
 
 
 
