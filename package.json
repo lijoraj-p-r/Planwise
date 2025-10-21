@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://lijoraj-p-r.github.io/Planwise---Smart-To-Do-Daily-Planner",
+  "homepage": "https://lijoraj-p-r.github.io/Planwise",
 
   "scripts": {
     "dev": "vite",
@@ -33,3 +33,4 @@
     "vite": "^7.1.7"
   }
 }
+
