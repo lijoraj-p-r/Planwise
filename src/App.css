@@ -265,11 +265,30 @@ button {
 .btn-delete {
   color: #ef4444;
   background: rgba(239, 68, 68, 0.1) !important;
+  padding: 10px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-delete svg {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-delete:hover {
-  background: rgba(239, 68, 68, 0.2) !important;
-  transform: scale(1.05) rotate(5deg);
+  background: #ef4444 !important;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+.btn-delete:hover svg {
+  transform: scale(1.1);
+}
+
+.btn-delete:active {
+  transform: scale(0.95);
 }
 
 .progress-tracker {
