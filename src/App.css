@@ -12,7 +12,6 @@
 
 * {
   box-sizing: border-box;
-  transition: all 0.2s ease;
 }
 
 body {
@@ -75,6 +74,7 @@ header {
   border-radius: var(--radius);
   font-size: 16px;
   outline: none;
+  transition: all 0.2s ease;
 }
 
 #inp input:focus {
@@ -82,20 +82,32 @@ header {
   box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
 }
 
+button {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
 #inp button {
   background: var(--primary);
   color: white;
-  border: none;
-  padding: 0 24px;
+  padding: 0 28px;
   border-radius: var(--radius);
-  font-weight: 600;
-  cursor: pointer;
+  font-weight: 700;
   white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
 }
 
 #inp button:hover {
   background: var(--primary-hover);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+#inp button:active {
+  transform: translateY(0);
 }
 
 #btns {
@@ -141,6 +153,14 @@ header {
   border-radius: var(--radius);
   margin-bottom: 12px;
   gap: 16px;
+  transition: all 0.3s ease;
+}
+
+.task-list li:hover {
+  border-color: var(--primary);
+  transform: scale(1.01);
+  background: #ffffff;
+  box-shadow: var(--shadow);
 }
 
 .task-info {
@@ -149,32 +169,7 @@ header {
   flex-direction: column;
 }
 
-.task-actions {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
-.task-list li:hover {
-  border-color: var(--primary);
-  transform: scale(1.01);
-}
-
-.task-list li.completed {
-  opacity: 0.6;
-  background: #f1f5f9;
-}
-
-.task-list li.completed span {
-  text-decoration: line-through;
-  color: var(--text-muted);
-}
-
-.task-list li div {
-  flex: 1;
-}
-
-.task-list li span {
+.task-info span {
   display: block;
   font-weight: 600;
   font-size: 16px;
@@ -182,38 +177,64 @@ header {
   overflow-wrap: anywhere;
 }
 
-.task-list li small {
+.task-info small {
   color: var(--text-muted);
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  word-break: break-all;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .task-list button {
-  padding: 8px 12px;
-  border: none;
-  background: transparent;
+  padding: 10px 16px;
   font-weight: 600;
-  cursor: pointer;
-  border-radius: 8px;
-  white-space: nowrap;
+  border-radius: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
 }
 
-.task-list button:first-of-type {
-  color: var(--primary);
+.btn-complete {
+  color: #059669;
+  background: #ecfdf5 !important;
 }
 
-.task-list button:first-of-type:hover {
-  background: #eff6ff;
+.btn-complete:hover {
+  background: #d1fae5 !important;
+  transform: scale(1.05);
 }
 
-.task-list button:last-of-type {
-  color: #ef4444;
+.completed {
+  opacity: 0.6;
+  background: #f1f5f9 !important;
 }
 
-.task-list button:last-of-type:hover {
-  background: #fef2f2;
+.completed span {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+.completed .btn-complete {
+  color: #64748b;
+  background: #e2e8f0 !important;
+}
+
+.btn-delete {
+  color: #dc2626;
+  background: #fef2f2 !important;
+  padding: 10px !important;
+}
+
+.btn-delete:hover {
+  background: #fee2e2 !important;
+  transform: scale(1.05) rotate(5deg);
 }
 
 .progress-tracker {
@@ -241,57 +262,69 @@ header {
   height: 100%;
   background: linear-gradient(to right, #2563eb, #10b981);
   border-radius: 4px;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clear-btn {
   width: 100%;
-  margin-top: 24px;
-  padding: 12px;
-  background: transparent;
+  margin-top: 32px;
+  padding: 14px;
+  background: #ffffff;
   color: #ef4444;
   border: 2px solid #fee2e2;
   border-radius: var(--radius);
-  font-weight: 600;
-  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 13px;
 }
 
 .clear-btn:hover {
-  background: #fef2f2;
-  border-color: #fecaca;
+  background: #ef4444;
+  color: #ffffff;
+  border-color: #ef4444;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2);
 }
 
 @media (max-width: 480px) {
   .App {
     margin: 0;
-    padding: 16px;
+    padding: 20px;
     border-radius: 0;
     min-height: 100vh;
   }
   
   #inp {
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
   }
   
   #inp button {
-    padding: 12px;
+    padding: 14px;
+    width: 100%;
   }
 
   #btns {
-    flex-direction: column;
     gap: 8px;
   }
 
   .task-list li {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
+    align-items: stretch;
+    gap: 16px;
+    padding: 20px;
   }
 
   .task-actions {
     width: 100%;
     justify-content: flex-end;
     border-top: 1px solid var(--border);
-    padding-top: 8px;
+    padding-top: 12px;
+  }
+
+  .task-list button {
+    flex: 1;
+    justify-content: center;
+    padding: 12px;
   }
 }
