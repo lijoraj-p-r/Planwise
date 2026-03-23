@@ -12,9 +12,22 @@ export default function App() {
     return savedTasks ? JSON.parse(savedTasks) : [];
   });
 
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("theme") || "dark";
+  });
+
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === "light" ? "dark" : "light");
+  };
 
   const addTask = (task)=>{
     setTasks([...tasks, task])
@@ -37,6 +50,11 @@ export default function App() {
   return (
     <div className='App'>
       <header>
+        <div className="header-top">
+          <button onClick={toggleTheme} className="theme-toggle">
+            {theme === "light" ? "🌙 Dark" : "☀️ Light"}
+          </button>
+        </div>
         <h1 className='title'>Planwise</h1>
         <p className='tagline'>Your friendly Task Manager</p>
       </header>
