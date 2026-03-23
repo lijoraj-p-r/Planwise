@@ -10,18 +10,18 @@ export default function TaskList({ tasks, updateTask, deleteTask }) {
       <ul>
         {tasks.map((task, index) => (
           <li key={index}  className= {task.completed ? 'completed' : '' }>
-            <div>
-              <span>
-                {task.text}
-              </span>
-              <small> ({task.priority}, {task.category})</small>
+            <div className="task-info">
+              <span>{task.text}</span>
+              <small>{task.priority} • {task.category}</small>
             </div>
-            <button onClick={() => toggleComplete(index)}>
-              {task.completed ? 'Undo' : 'Complete'}
-            </button>
-            <button onClick={() => deleteTask(index)} style={{ color: 'red' }}>
-              Delete
-            </button>
+            <div className="task-actions">
+              <button onClick={() => toggleComplete(index)}>
+                {task.completed ? '↩️ Undo' : '✅ Done'}
+              </button>
+              <button onClick={() => deleteTask(index)}>
+                🗑️
+              </button>
+            </div>
           </li>
         ))}
       </ul>

@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Taskform({ addTask }) {
   const [task, setTask] = useState('');
-  const [priority, setPriority] = useState('medium');
+  const [priority, setPriority] = useState('Medium');
   const [category, setCategory] = useState('General');
   const [error, setError] = useState('');
 
@@ -14,12 +14,10 @@ export default function Taskform({ addTask }) {
       return;
     }
 
-    
     addTask({ text: task, priority, category, completed: false });
 
-    
     setTask('');
-    setPriority("medium");
+    setPriority("Medium");
     setCategory("General");
     setError('');
   }
@@ -29,17 +27,16 @@ export default function Taskform({ addTask }) {
       <div id="inp">
         <input
           type='text'
-          placeholder='Enter the task'
+          placeholder='What needs to be done?'
           value={task}
           onChange={(e) => {
             setTask(e.target.value);
             if (error) setError(''); 
           }}
         />
-        <button type="submit">Add task</button>
+        <button type="submit">Add Task</button>
       </div>
 
-      
       {error && (
         <div id="error">
           {error}
@@ -48,15 +45,15 @@ export default function Taskform({ addTask }) {
 
       <div id='btns'>
         <select value={priority} onChange={(e) => setPriority(e.target.value)}>
-          <option value="High">High</option>
-          <option value="Medium">Medium</option>
-          <option value="low">low</option>
+          <option value="High">🔥 High</option>
+          <option value="Medium">⚡ Medium</option>
+          <option value="Low">💧 Low</option>
         </select>
 
         <select value={category} onChange={(e) => setCategory(e.target.value)}>
-          <option value="general">General</option>
-          <option value="work">work</option>
-          <option value="personal">personal</option>
+          <option value="General">🏷️ General</option>
+          <option value="Work">💼 Work</option>
+          <option value="Personal">🏠 Personal</option>
         </select>
       </div>
     </form>
